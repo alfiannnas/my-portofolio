@@ -11,7 +11,6 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: 190px;
 }
 
 @keyframes textclip {
@@ -25,16 +24,26 @@
 .content {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .frame {
-  width: 200px; /* Set your desired width */
+  width: 320px; /* Set your desired width */
   height: auto;
   margin-right: 20px; /* Adjust as needed for spacing between image and text */
   border-radius: 100%;
+  border: 5px solid #373636;
 }
 
 .text {
   text-align: left; /* Align text to the left of the image */
+}
+
+.animation {
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    transform: translateY(30%);
+  }
 }
