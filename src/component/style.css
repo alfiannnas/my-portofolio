@@ -11,6 +11,7 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
+  font-size: 35px;
 }
 
 @keyframes textclip {
@@ -42,8 +43,58 @@
   animation: mymove 3s infinite;
 }
 
+.container-1 {
+  max-width: 550px;
+}
+
+.container-2 {
+  margin-bottom: -40px;
+  font-size: 35px;
+  margin-top: -10px;
+}
+.container-3 {
+  max-height: 100px;
+}
+
 @keyframes mymove {
   50% {
     transform: translateY(30%);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .frame {
+    width: 160px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+  }
+  .container-1 {
+    max-width: 300px;
+  }
+  .container-2 {
+    max-width: fit-content;
+    top: 34%;
+    position: absolute;
+    font-size: 25px;
+  }
+  .container-3 {
+    font-size: 10px;
+  }
+  .animate-charcter {
+    top: 34%;
+    font-size: 20px;
+    position: absolute;
+  }
+  .posisi {
+    margin-top: 120px;
+    position: relative;
+    font-size: 14px;
+  }
+  button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
