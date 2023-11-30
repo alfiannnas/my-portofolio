@@ -2,11 +2,12 @@ import React from "react";
 import "./App.css";
 import "./component/style.css";
 import Button from "./component/Button";
+import img from "./assets/img.png";
 const App: React.FC = () => {
   return (
     <>
       <div className="content">
-        <img className="frame" src="/assets/img.png" alt="Your Image" />
+        <img className="frame" src={img} alt="Your Image" />
         <div className="text">
           <div className="container-1">
             <p className="animation container-2">Hi There👋🏻</p>
